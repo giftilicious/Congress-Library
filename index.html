@@ -1,12 +1,54 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" style="height:100%">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <meta name="author" content="Gifty Gyimah, Romal Patel, Rouger [?], Summer Villeneuve">
+    <title>Library of Congress - Search Results</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body style="height:100%">
+
+  <main style="background-color: greenyellow; height:100%">
+    <div class="container" style="max-width: 100%">
+      <div class="row">
+        <div class="col-md-3 col-5">
+          <h1>Library of Congress Search Engine</h1>
+          <form method="POST">
+            <label class="visually-hidden" for="search">Search term</label><br>
+            <input type="text" id="search" class="p-2 mb-2 w-100" name="search"><br>
+            <label class="visually-hidden" for="categories">Choose a category:</label>
+            <select id="categories" class="p-2 mb-2 w-100" name="categories">
+              <option selected value="manuscripts">Manuscripts</option>
+              <option value="other">Other</option>
+              <option value="category">Category</option>
+              <option value="types">Types</option>
+            </select>
+            <input type="submit" class="btn btn-success w-100 mb-2" value="Search">
+            <input type="" class="btn btn-danger w-100 mb-2" value="Go back">
+          </form>
+        </div>
+        <div class="col-md-9 col-7">
+          <!-- Search results generate here -->
+        </div>
+      </div>
+    </div>
+  </main>
     
-</body>
+  <footer class="mt-auto text-muted border-top">
+    Footer
+  </footer>
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
 </html>
